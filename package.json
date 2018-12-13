@@ -1,15 +1,23 @@
 {
   "name": "selection",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "immutable": "^4.0.0-rc.12",
+    "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react-immutable-proptypes": "^2.1.0",
+    "react-redux": "^6.0.0",
+    "react-scripts": "2.1.1",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.2",
+    "reselect": "^4.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start && set NODE_ENV=development",
+    "build": "react-scripts build && set NODE_ENV=production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -21,5 +29,14 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "prettier": "^1.14.3"
+  }
 }
